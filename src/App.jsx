@@ -16,15 +16,7 @@ function App() {
 
   return (
     <>
-      {/* <Navbar />
-      <h1>{result}</h1>
-      <SearchBar search={search} setSearch={setSearch} />
-      {moviesList.length === 0 && <h2>No Movies Found</h2>}
-      {moviesList.map((movie, index) => {
-        return <MovieCard key={index} title={movie.title} year={movie.year} />;
-      })} */}
-      {/* <Login /> */}
-      <BrowserRouter>
+      <BrowserRouter basename="/Netflix-Clone">
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
