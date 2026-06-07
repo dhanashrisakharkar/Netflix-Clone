@@ -1,6 +1,7 @@
 .movieCard {
   min-width: 220px;
   cursor: pointer;
+  position: relative;
 }
 
 .movieCard img {
@@ -14,4 +15,46 @@
   margin-top: 10px;
   text-align: center;
   font-family: none;
+}
+
+.moviePopup{
+  position: absolute;
+
+  top: -220px; /* show above card */
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 350px;
+  height: 220px;
+
+  background: #141414;
+  border-radius: 12px;
+
+  z-index: 9999;
+
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+  
+}
+
+.moviePopup video {
+     width: 100%;
+    height: 142%;
+    object-fit: fill;
+    position: relative;
+    top: -45px;
+}
+
+.popup-info {
+  padding: 10px;
+}
+
+.popup-info h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.popup-info button {
+  padding: 8px 16px;
+  cursor: pointer;
 }

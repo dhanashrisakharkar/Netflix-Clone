@@ -5,6 +5,7 @@ import { useState } from "react";
 import regex from "../data/regex";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import loginBg from "../assets/Login6.jpg";
 
 function Login() {
   const navigate = useNavigate();

@@ -1,9 +1,10 @@
 import "../css/Home.css";
-import Navbar from "../component/navbar";
 import MovieCard from "../component/MovieCard";
 import movies from "../data/movies";
+import HeroBanner from "../component/HeroBanner";
 
 function Home() {
+
   return (
     <>
       <nav className="navbar">
@@ -17,11 +18,13 @@ function Home() {
 
       <main className="homePage">
         <section className="heroSection">
-          
+          <HeroBanner movie={movies[0]} />
         </section>
 
-        <section className="moviesCard">
-          <h2>Trending Now</h2>
+        <section
+          className="moviesCard"
+        >
+          {/* <h2>Trending Now</h2> */}
 
           <div className="movieRow">
             {movies.map((movie) => (

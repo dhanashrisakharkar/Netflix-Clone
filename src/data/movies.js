@@ -1,6 +1,7 @@
 import chaava from "../assets/movies/chaava1.jpg";
 import dhurandar from "../assets/movies/dhurandar.jpg";
 import pushpa from "../assets/movies/pushpa2.jpg";
+import pushpaBanner from "../assets/movies/pushpa6.jpg"
 import crown from "../assets/movies/theCrown2.jpg";
 import drishyam from "../assets/movies/drishyam2.avif";
 import harryPotter from "../assets/movies/harryPotter.jpg";
@@ -8,11 +9,22 @@ import padmaavat from "../assets/movies/padmaavat2.jpg";
 import aakr from "../assets/movies/AAKR2.webp";
 import bahubali from "../assets/movies/bahubali.webp";
 import manikarnika from "../assets/movies/manikarnika.jpg";
+import pushpaVideo from "../assets/movies/mahabharatVideo.mp4"
+import mahabharat from "../assets/movies/mahabharat3.jpg";
+import mahabharatVideo from "../assets/movies/mahabharatVideo.mp4"
 
 const movies = [
-  { id: 1, title: "Chaava", image: chaava },
+  {
+    id: 1,
+    title: "Mahabharat",
+    banner: mahabharat,
+    image: mahabharat,
+    trailer: mahabharatVideo,
+    // description: "Pushpa Raj rises in the world of red sandalwood smuggling.",
+  },
+  { id: 1, title: "Pushpa", image: pushpa },
   { id: 2, title: "Dhurandhar", image: dhurandar },
-  { id: 3, title: "Pushpa", image: pushpa },
+  { id: 3, title: "Chaava", image: chaava },
   { id: 4, title: "The Crown", image: crown },
   { id: 5, title: "Drishyam 2", image: drishyam },
   { id: 6, title: "Harry Potter", image: harryPotter },
